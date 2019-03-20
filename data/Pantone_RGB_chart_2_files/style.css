@@ -1,0 +1,328 @@
+/*********************************** labelpartners style definitions ****************************/ 
+
+/****** generals *****/
+
+body { margin:0; padding:0; font-size:12px; line-height:16px; color:#333; background-image:url(/images/back_site.gif); background-repeat:repeat; } 
+
+body, div, input, select, textarea { font-family:'Ubuntu', Arial, Helvetica, sans-serif; font-weight:400; text-rendering:optimizeLegibility; }
+
+.text { font-size:13px; color:#333;  } /* used for spans inside other formatted tags */ 
+
+a:link, a:active, a:visited, .small a:link, .small a:active, .small a:visited { color:#555566; text-decoration:underline; outline:0; } 
+a:hover, .small a:hover { color:#f60; text-decoration:underline; outline:0 } 
+small, .small { font-size:11px; } 
+strong, b { font-weight:700; } 
+.smaller { font-size:10px; } 
+.large { font-size:14px; } 
+.largehl { font-size:13px; color:#f60; font-weight:700; } 
+h1, h2, h3, h4, h5, .mega, .h2class { margin:0; color:#0D0D0D; font-weight:400; text-align:left; letter-spacing:-0.02em; text-decoration:none; } 
+h1 a:link, h2 a:link, h4 a:link, h1 a:visited, h2 a:visited, h4 a:visited { color:#f60; text-decoration:none; } 
+h5, h5 a:link, h5 a:visited { color:#0D0D0D; font-size:14px; line-height:14px; font-weight:400; text-decoration:underline; margin-bottom:0; } 
+h5 a:hover { color:#f60; } 
+.lowmargin { margin-top:4px; } 
+h1 a:hover, h2 a:hover { color:#f60; text-decoration:none; } 
+h3 a:link, h3 a:visited { color:#333; text-decoration:underline; } 
+h3 a:hover, h4 a:hover { color:#f60; text-decoration:underline; } 
+.mega { font-size:31px; line-height:33px; } 
+h1 { font-size:24px; line-height:24px; } 
+h2 { font-size:20px; margin:20px 0 0 -2px; line-height:19px; } 
+.h2class { font-size:20px; margin:0 0 8px -2px; line-height:24px; } 
+.h2class .highlighted { color:#f60; } 
+h3 { font-size:17px; line-height:16px; } 
+h4 { font-size:15px; line-height:14px; } 
+
+/* for testing font change by AJAX */ 
+/* 
+h4 { font-size:15px; line-height:14px; font-family:'Quintessential'; } 
+*/ 
+
+.show { display:block; } 
+.hide { display:none; } 
+.hidehelp { display:none; position:absolute; width:250px; height:auto; padding:0; color:#333; margin-top:6px; font-size:12px; border:0; } 
+#help { display:none;position:absolute;top:100px;left:100px;margin-left:25px;padding:6px;width:auto;max-width:280px;height:auto;
+	font-size:12px;background-color:#fff;z-index:20;border:1px solid #555566; } 
+.questionmark { cursor:pointer; } 
+
+#cancelaccount { position:absolute;width:350px;height:150px;margin:-200px 0 0 160px;padding:0 10px;background-color:#fff;border:1px solid #f60; }
+
+.images { border:1px solid #767688; } 
+
+.fl { float:left; margin-right:10px; } 
+.flnull { float:left; } 
+.cfl { clear:both; float:left; } 
+.cflnull { clear:both; float:left; } 
+.fr { float:right; margin-left:10px; } 
+.frnull { float:right; }
+.cfr { clear:both; float:right; } 
+.cl { clear:left; }
+.cr { clear:right; }
+.cb { clear:both; }
+
+.warning { color:#c00; } 
+.ok { color:#693; } 
+.normal { font-size:13px; line-height:16px; color:#555566; } 
+.inhnormal { font-size:13px; line-height:16px; color:#0D0D0D; } 
+.answered { color:#f60; } 
+.highlighted { color:#f60; } 
+a.highlighted { color:#f60; } 
+a.h3.highlighted { color:#f60; } 
+
+ul { padding-left:0.7em; margin-left:0.7em; list-style-image:url(/images/list.png); font-size:14px; line-height:14px; } 
+.homelist { padding-left:0.7em; margin-left:0.7em; list-style-image:url(/images/list.png); font-size:14px; line-height:15px; } 
+.openertext { font-size:14px; margin-top:-6px; } 
+ul.errorslist { padding-left:0.7em; margin-left:0.7em; list-style-image:url(/images/attention.png); } 
+ul.norm { padding-left:1em; margin-left:1em; list-style-image:none; font-size:12px; line-height:15px; }
+li { margin-bottom:0.4em; } 
+li.suppressed a:link, li.suppressed a:visited { text-decoration:none; color:#f60; } 
+li.suppressed a:hover { text-decoration:underline; color:#f60; } 
+.singleline { margin-bottom:0.4em; font-size:13px; line-height:15px; } 
+
+input { padding-left:2px; height:20px; color:#333; border:1px solid #ccc; } 
+input.light { color:#999; } 
+select { font-size:12px; height:24px; border:1px solid #ccc; } 
+.disabled { color:#666; background-color:#ccc; } 
+.enabled { color:#333; background-color:#fff; } 
+textarea { padding-left:2px; font-size:13px; border:1px solid #ccc; } 
+textarea.light { color:#999; } 
+.superbuttons, .buttons, .smallbuttons, .understatedbuttons, .largebuttons, .xlargebuttons { font-size:14px; color:#fff; padding-bottom:3px; text-decoration:none; outline:0; } 
+.superbuttons a, .buttons a, .smallbuttons a, .understatedbuttons a, .largebuttons a, .understatedbuttons a { text-decoration:none; } 
+.superbuttons, .buttons { width:160px; height:30px; background-image:url(/images/button.png); background-repeat:no-repeat; cursor:pointer; border:0; font-weight:700; } 
+.largebuttons { 
+	clear:both; float:left; width:200px; padding-top:6px; height:24px; background-image:url(/images/button_large.png); 
+	background-repeat:no-repeat; cursor:pointer; border:0; font-weight:700; color:#fff; text-align:center; text-decoration:none; 
+} 
+.largebuttons a { color:#fff; } 
+.xlargebuttons { 
+	clear:both; float:left; width:300px; padding-top:6px; height:24px; background-image:url(/images/button_xlarge.png); 
+	background-repeat:no-repeat; cursor:pointer; border:0; font-weight:700; color:#fff; text-align:center; text-decoration:none; 
+} 
+.xlargebuttons a { color:#fff; } 
+.understatedbuttons { width:160px; height:30px; background-image:url(/images/buttonunderstated.png); background-repeat:repeat-x; cursor:pointer; border:0; font-weight:400; } 
+.smallbuttons { 
+	background-image:url(/images/back_buttons.jpg); background-repeat:repeat-x;
+	background-color:#dadada; border:1px solid #999; cursor:pointer; color:#555566; outline:0; 
+} 
+.standardinputs { height:22px; width:auto; min-width:270px; border:1px solid #ccc; padding-left:2px; 
+	font-size: 13px; color:#333; vertical-align: bottom;  } 
+.nlinputs { height:22px; width:auto; min-width:318px; color:#333; border:1px solid #999; padding-left:2px; vertical-align: bottom; outline:0; } 
+.superbuttons { height:36px; padding:0 11px 0 11px; font-size: 13px; } 
+.smallbuttons { height:24px; padding:0 4px; margin-top:-1px; font-size: 12px; } 
+.superbuttons { font-weight:700; }
+.standardtextarea { 
+	width:605px; height:auto; min-height:200px; padding:4px; border:1px solid #999; font-family:'Ubuntu', Arial, Helvetica, sans-serif; font-size: 12px; 
+	color:#333; background-color:#fff; text-align:left; vertical-align:top; overflow:auto; z-index:3; 
+} 
+#regresponse { display:block; width:606px; height:auto; padding:6px; background-color:#fff; color:#c00; margin:5px 0 15px 0; border:1px solid #c00; } 
+#regresponsep, #regresponseb { display:none; width:606px; height:auto; padding:6px; background-color:#fff; color:#c00; margin:5px 0 15px 0; border:1px solid #c00; } 
+#nlresponse { display:none; width:308px; height:auto; padding:6px; background-color:#fff; color:#c00; margin:8px 0 8px 0; border:1px solid #c00; } 
+
+/******************************** layout ********************************/  
+
+/****** containers *****/ 
+#top { width:100%; position:absolute; top:0; left:0; height:140px; z-index:5; margin:0; padding:0; color:#fff; background-image:url(/images/back_top.jpg); background-repeat:repeat-x; } 
+.topcontainer { width:875px; } 
+#container, #bottom, #categories, #show, #userpage { width:875px; z-index:2; } 
+#logo, #login, #signup, #sitesearch, #userpage { float:left; } 
+#container { z-index:2; margin-top:160px; } 
+#bottom  { z-index:2; margin:0; padding:0; color:#333; background-color:#fff; }  
+#bottom { clear:both; height:42px; margin:28px 0 0 0; } 
+#showboxhead { position:relative; top:118px; width:875px; height:22px; background-image:url(/images/showboxhead.gif); background-repeat:no-repeat; z-index:110; }
+#welcome { z-index:1; margin-top:80px; width:600px; } 
+#show { z-index:1; margin-top:140px; width:875px; height:auto; min-height:510px; padding:0; background-image:url(/images/back_showbox.png); background-repeat:repeat-y; text-align:left; } 
+#showboxfooter { z-index:1; width:875px; height:22px; padding:0; background-image:url(/images/back_showboxfooter.png); background-repeat:no-repeat; } 
+#morecontent { width:875px; } 
+#fader { z-index:1; width:405px; height:490px; overflow:hidden; margin-right:1px; } 
+.column { float:left; width:31%; margin:20px 0 10px 2%; text-align:left; } 
+.pd { position:absolute; display:none; width:auto; padding:3px; background-color:#fff; text-align:left; } 
+.boxtop { width:875px; height:20px; background-image:url(/images/back_boxtop.png); background-repeat:no-repeat; } 
+.boxcenter { width:875px; height:auto; background-image:url(/images/back_boxcenter.png); background-repeat:repeat; } 
+.boxbottom { width:875px; height:20px; background-image:url(/images/back_boxbottom.png); background-repeat:no-repeat; } 
+.boxheader { margin:0 0 14px 51px; } 
+
+/****** cart + order *****/ 
+#leadtimeselect { width:875px; margin:20px 39px 0 39px; text-align:left; } 
+#temporarymessage { width:875px; margin:20px 39px 0 39px; text-align:left; } 
+#leadtimeleft { float:left; width:410px; height:auto; margin:0 0 0 51px; text-align:left; } 
+#leadtimeleftprintedlabels { float:left; width:700px; height:auto; margin:0 0 0 21px; text-align:left; } 
+#leadtimeright { height:auto; margin:0 0 0 467px; text-align:left; color:#f60; } 
+#leadtimeright a, #leadtimeright .h2class { color:#f60; } 
+#orderModeDetailsNormal, #orderModeDetailsExpress { margin:10px 0 0 28px; } 
+#vatinfo { position:absolute; width:240px; height:auto; margin:10px 0 0 10px; padding:6px 12px; font-size:11px; color:#333; background-color:#fff; border:1px solid #999; } 
+#soinfo { position:absolute; width:300px; height:auto; margin:10px 0 0 10px; padding:6px 12px; font-size:11px; color:#333; background-color:#fff; border:1px solid #999; } 
+.listingcells { border-bottom:1px dotted #333; }
+.listingheaders { border-bottom:1px solid #333; }
+.ltnormalOn, .ltnormalOff, .ltexpressOn, .ltexpressOff { float:left; margin-top:4px; width:22px; height:21px; } 
+.ltnormalOn { background-image:url(/images/lt_normal_on.gif); } 
+.ltnormalOff { background-image:url(/images/lt_normal_off.gif); } 
+.ltexpressOn { background-image:url(/images/lt_express_on.gif); } 
+.ltexpressOff { background-image:url(/images/lt_express_off.gif); } 
+.orderheader { width:446px; height:30px; background-image:url(/images/back_orderhgeader.gif); background-repeat:no-repeat; padding:7px 0 0 10px; } 
+.ordercontent { width:446px; padding:0 0 0 10px; } 
+.textinputs { border:1px solid #999; } 
+.errorfields { border:1px solid #c00; } 
+#orderbox { position:fixed; z-index:5; margin:75px 0 0 536px; width:270px; height:334px; background-image:url(/images/orderbox.gif); background-repeat:no-repeat; padding:0 16px; } 
+#orderbox h3, #emailbox h3 { width:270px; color:#fff; margin:7px 0 0 0; text-align:center; } 
+#emailbox { position:absolute; z-index:5; margin:400px 0 0 536px; width:270px; height:272px; background-image:url(/images/emailbox.gif); background-repeat:no-repeat; padding:0 16px; } 
+#entercolors { padding:0 0 0 10px; } 
+.colorclick { clear:left; float:left; padding:3px 6px; width:260px; border:1px solid #ccc; cursor:pointer; background-image:url(/images/back_selectors.gif); background-position:right; } 
+.swatches { float:left; width:36px; padding:4px; margin:-1px 0 0 4px; border:1px solid #fff; } 
+.colorswatches { width:200px; height:100px; margin:3px 0 8px 0; } 
+.colordirectselect { position:absolute; display:none; width:auto; max-width:170px; height:auto; padding:6px 16px; margin:10px 0 0 140px; background-color:#fff; border:1px dotted #999; font-size:11px; } 
+.colorselect { clear:left; float:left; display:none; width:260px; height:200px; overflow:auto; background-color:#fff; margin:0; padding:6px; border:1px solid #ccc; } 
+.labelelementinput { width:260px; padding:3px 6px; font-size:12px; } 
+#labelupload, #labeldesigner { display:none; } 
+#bubblelabelconf { position:absolute; z-index:6; width:134px; height:73px; padding:8px 40px 8px 8px; margin:-60px 0 0 -202px; color:#333; font-size:11px; background-image:url(/images/back_bubble.png); background-repeat:no-repeat; } 
+.cartrows { border-bottom:1px solid #999; } 
+#orderhead, #paymenthead { width:355px; height:auto; float:left; padding:4px 10px 4px 0; font-size:12px; background-color:#fff; } 
+#order, #payment { height:auto; float:left; margin:0 0 16px 0; padding:0; font-size:12px; text-align:left; } 
+#payment { margin-left:40px; } 
+#CHECKOUTLINK { float:right; } 
+#orderfields { width:355px; height:auto; float:left; padding:4px 0 10px 0; font-size:12px; }
+#deliveryfields { width:355px; height:auto; clear:left; float:left; padding:12px 0 10px 0; font-size:12px; }
+#paymentfields { width:360px; height:auto; float:left; padding:4px 0 10px 0; font-size:12px; } 
+#paymentcheck { clear:both; float:left; padding:3px; text-align:left; color:#c00; } 
+#fullalert { display:none;filter:alpha(opacity=80);-moz-opacity:0.8;opacity: 0.8;position:fixed;top:0;left:0;width:100%; height:100%;margin:0;background-color:#666;z-index:20; } 
+#alertmessage { display:none;position:fixed;top:20%;left:25%;right:25%;z-index:30;padding:10px 20px;background-color:#fff; } 
+#materialhelp { float:left; width:440px; height:250px; overflow:auto; padding:3px 14px; margin-bottom:26px; background-color:#fff; border:1px dotted #999; } 
+.folddivs { float:left; width:117px; padding:9px; margin:16px 13px 0 0; border:1px solid #999; height:115px; } 
+.folddivsactive { float:left; width:117px; padding:9px; margin:16px 13px 0 0; border:3px solid #c00; height:115px; } 
+.smallfolddivs { float:left; width:111px; padding:6px; margin:11px 10px 0 0; border:1px solid #999; height:109px; background-color:#fff; } 
+#purposeview { position:absolute; z-index:20; width:400px; height:390px; overflow:auto; padding:18px; margin:-20px 0 0 380px; border:1px solid #999; background-color:#fff; } 
+#ECBOX { width:317px; padding:5px 8px; margin-bottom:8px; background-color:#fff; border:1px dotted #c00; } 
+
+/****** label designer (ld) *****/ 
+#labeldesigner { margin:0 0 30px 23px; } 
+.ldbody { background-image:none; background-color:#fff; } 
+#ldpreviewcontainer { width:396px; overflow:visible; margin:14px 0 6px 10px; padding:19px 0; text-align:center; border:1px solid #000; background-image:url(/images/back_uploadpreview.gif); background-repeat:repeat; } 
+#labelpreview { position:absolute; -moz-user-select:none; -khtml-user-select:none; overflow:hidden; text-align:center; } 
+#lt1, #lt2, #lt3, #lt4 { position:absolute;cursor:move;-moz-user-select:none;-khtml-user-select:none; } 
+#label { display:table; table-layout:fixed; margin:0 0 12px 10px; overflow:hidden; text-align:center; border:1px dotted #ccc; } 
+#lt { width:100%; height:100%; display:table-cell; vertical-align:middle; text-align:center; font-family:Arial, Helvetica, sans-serif; }  
+#ldusemousehint { position:absolute; z-index:6; width:134px; height:73px; margin:-60px 0 0 274px; padding:8px 8px 8px 40px; text-align:left; color:#333; font-size:11px; background-image:url(/images/back_bubble_right.png); background-repeat:no-repeat; } 
+.fontclick { clear:left; float:left; padding:3px 6px; width:382px; border:1px solid #ccc; cursor:pointer; background-image:url(/images/back_selectors.gif); background-position:right; } 
+.fontselect { clear:left; float:left; display:none; width:382px; height:300px; overflow:auto; background-color:#fff; margin:0; padding:6px; border:1px solid #ccc; } 
+.rotate180 {
+-moz-transform:rotate(180deg); /* Firefox 3.6 Firefox 4 */
+-webkit-transform:rotate(180deg); /* Safari */
+-o-transform:rotate(180deg); /* Opera */
+-ms-transform:rotate(180deg); /* IE9 */
+transform:rotate(180deg); /* W3C */
+} 
+.caresymbolsmap { clear:left; float:left; width:396px; margin:12px 0; padding:0; color:#000; } 
+.caresymbols { float:left; width:30px; height:auto; margin:6px 0 0 0; padding:4px; border-left:1px solid #999; color:#000; font-family:"Wash Care Symbols M54"; font-size:30px; text-align:right; } 
+a .caresymbols { text-decoration:none; } 
+.caresymbols:hover { color:#f60; }
+.explaincurrentcaresymbols { clear:left; float:left; color:#f60; margin:10px 0; } 
+.careletters { color:#999; font-size:9px; font-family:Arial, Helvetica, sans-serif; line-height:9px; } 
+
+/****** upload preview *****/ 
+#uploadedpreviewcontainer { width:430px; height:89px; overflow:visible; margin:14px 0 6px 11px; border:1px solid #000; background-image:url(/images/back_uploadpreview.gif); background-repeat:repeat; } 
+#uploadlink { padding:8px; background-color:#fff; } 
+
+/****** top *****/
+#topleft { float:left; text-align:left; } 
+#logo { float:left; margin:4px 0 0 4px; } 
+#message { float:left; margin:47px 1px 0 12px; }
+#topright { float:right; margin:83px 19px 0 0; font-size:13px; color:#fff; } 
+#topright a:link, #topright a:visited { text-decoration:none; color:#333; } 
+#topright a:hover { text-decoration:none; color:#333; } 
+#servicenavi { position:absolute; top:0; z-index:500; width:850px; margin:2px 14px 0 0; font-size:12px; color:#999; text-align:right; } 
+#servicenavi a:link, #servicenavi a:visited { text-decoration:none; color:#999; } 
+#servicenavi a:hover { text-decoration:none; color:#f60; } 
+.navpoints { float:right; margin-left:6px; height:22px; text-decoration:none; cursor:pointer; } 
+.servicenavpoints { float:right; z-index:500; margin-left:8px; text-decoration:none; cursor:pointer; } 
+.toplinks, .toplinks_active { float:left; width:auto; height:22px; text-decoration:none; padding:2px 2px 0 9px; } 
+.toplinks { background:0; } 
+.toplinks_active { background-image:url(/images/back_navpoint_left.gif); background-repeat:no-repeat; } 
+.toplinks_active_right { float:left; width:9px; height:22px; background-image:url(/images/back_navpoint_right.gif); background-repeat:no-repeat; } 
+.toplinks a:link, .toplinks a:visited { color:#fff; text-decoration:none; } 
+.toplinks a:hover { color:#f60; text-decoration:none; } 
+.toplinkss { float:right; z-index:4; margin:-4px 0 0 15px; padding:4px 7px; text-decoration:none; text-align:left; color:#fff; } 
+#ualinks, #sub_infos { position:absolute; z-index:500; width:auto; margin:0; margin-top:6px; padding:12px 12px 12px 18px; line-height:19px; background-image:url(/images/back_subnavi.jpg); background-repeat:repeat-x; text-align:left; } 
+#allcurrencies { position:absolute; z-index:500; width:auto; margin:0; margin-top:6px; padding:7px 12px 7px 16px; line-height:18px; background-image:url(/images/back_servicenavi.png); background-repeat:repeat-x; text-align:left; } 
+#morelangs { position:absolute; z-index:500; width:6auto; margin:0; margin-top:6px; padding:7px 12px 7px 17px; line-height:20px; background-image:url(/images/back_servicenavi.png); background-repeat:repeat-x; text-align:left; } 
+#showua { position:absolute; z-index:500; width:270px; height:auto; margin:0; margin-top:6px; padding:7px 12px 7px 0; background-image:url(/images/back_servicenavi.png); background-repeat:repeat-x; text-align:left; cursor:default; } 
+#nlfields { position:absolute; z-index:3; margin:0 -7px; padding:2px 4px 7px 12px; line-height:19px; text-align:left; background-color:#E9E9EE; } 
+#searchfield { clear:left; margin:35px 0 0 14px; } 
+#q { width:200px; height:21px; color:#767688; padding-left:4px; margin-top:-3px; font-size:11px; background-image:url(/images/searchfield.gif); background-repeat:no-repeat; border:0; } 
+#sbutton { margin-left:-4px; }
+#suggestions { display:none; position:absolute; z-index:3; margin:0 -7px; padding:0 7px 7px 7px; width:200px; height:auto; background-color:#fff; } 
+#brandsuggestions { display:none; position:absolute; z-index:3; margin:56px 0 0 0; padding:0; width:612px; height:auto; max-height:240px; overflow:auto; 
+	background-color:#fff; border-left:1px solid #999; border-right:1px solid #999; border-bottom:1px solid #999; } 
+.ajaxlines { font-size:11px; padding:5px 4px; border-bottom:1px dotted #666; cursor:pointer; text-align:left; } 
+
+/****** main nav tabs *****/ 
+#tabnavi { position:absolute; top:84px; margin-left:270px; z-index:100; font-size:13px;  } 
+#tabnavi a:link, #tabnavi a:visited { text-decoration:none; color:#333; } 
+#tabnavi a:hover { text-decoration:none; color:#333; } 
+#tab1, #tab2, #tab3, #tab4 { float:right; width:125px; height:24px; margin:4px 0 0 6px; padding:8px 6px 0 9px; text-align:left; background-repeat:no-repeat; } 
+.tab_active { background-image:url(/images/tab_active.jpg); text-decoration:none; color:#333; } 
+.tab_hover { background-image:url(/images/tab_hover.jpg); text-decoration:none; color:#333; } 
+.tab_inactive { background-image:url(/images/tab_inactive.jpg); text-decoration:none; color:#333; } 
+#sub1, #sub2, #sub3, #sub4 { position:absolute; top:117px; width:875px; height:555px; background-image:url(/images/back_sectionmenu.png); z-index:200; text-align:left; color:#333; } 
+.rollupimage { position:absolute; top:539px; width:875px; height:15px; margin:0 0 0 -48px; cursor:pointer; } 
+.tabcontent { margin:45px 52px; } 
+.tabcolumnleft { float:left; width:380px;height:auto; margin:0; text-align:left; } 
+.tabcolumnright { width:auto; height:auto; margin-left:445px; text-align:left; } 
+.tabcolumnright p { line-height:22px; } 
+
+/****** categories *****/
+.topnavi, .usertopnavi { float:left; height:23px; padding:7px 12px 0px 12px; border-right:1px solid #81818E; } 
+.topnaviactive, .usertopnaviactive { float:left; height:23px; padding:7px 12px 0px 12px; border-right:1px solid #81818E; background-image:url(/images/navibar_active_back.gif); } 
+.firsttopnaviactive { float:left; height:23px; padding:7px 12px 0px 12px; border-right:1px solid #81818E; background-image:url(/images/firstnaviactive.gif); background-repeat:no-repeat; } 
+
+/****** bottom *****/
+#footerbar { float:left; width:100%; height:100%; margin:15px 0 0 0; font-size:11px; border-top:1px solid #666; border-bottom:1px solid #666; background-color:#fff; } 
+#footerbar a:link, #footerbar a:visited { color:#666; text-decoration:underline; } 
+#footerbar a:hover { color:#f60; text-decoration:underline; }
+.footerlinks { color:#666; float:left; margin:7px 0 6px 13px; } 
+#countries { position:absolute; width:200px; height:130px; z-index:5; margin:-153px 0 0 0; background-color:#fff; padding:10px; text-align:left; line-height:19px; } 
+
+#theend { float:right; font-size:11px; color:#666; margin:8px 13px 0 0; } 
+#alertbox { position:absolute; top:160px; left:50%; z-index:90; width:300px; height:auto; padding:6px 12px; color:#c00; background-color:#ff9; border:3px dashed #c00; text-align:left; } 
+
+/****** special shop functions *****/ 
+.sizelabelswatches { float:right; width:21px; height:19px; padding-top:2px; margin-right:30px; text-align:center; border:1px solid #999; font-family: 'PT Sans', 'Ubuntu', sans-serif; font-weight:400; font-size:9px; } 
+.sizelabelzooms { clear:left; float:left; width:62px; height:40px; padding-top:22px; margin-top:16px; text-align:center; border:1px solid #999; font-family: 'PT Sans', 'Ubuntu', sans-serif; font-weight:400; font-size:27px; } 
+.pantonesminis { float:left; width:15px; height:15px; margin:0 2px 2px 0; } 
+
+/****** CHAT *****/ 
+#chatwidget { position:fixed; bottom:0; right:14px; width:138px; height:44px; padding:0; } 
+#chatheader { position:absolute; top:16px; left:16px; width:370px; height:19px; padding:6px; background-color:#fff; border:1px solid #333; } 
+.adminchatbox { float:left;width:350px;margin:20px 20px 0 0;padding:10px 16px;border:1px solid #333; } 
+.userchatbox { float:left;width:350px;height:369px;margin:52px 16px 0px 16px;padding:10px 16px;text-align:left;background-color:#fff;border:1px solid #333; } 
+.conversationwindow { clear:left; float:left; width:100%; height:230px; overflow:auto; text-align:left; vertical-align:bottom; margin-top:12px; } 
+.chatmessages { float:left; width:100%; text-align:left; margin-top:6px; } 
+.chatpostwrapper { clear:left; float:left; width:100%; text-align:left; font-size:12px; margin-top:18px; } 
+.chatpost { width:346px; height:50px; text-align:left; font-size:12px; margin-top:4px; } 
+.sendbutton { clear:left; float:left; text-align:left; margin-top:1px; } 
+#chatcopyright { margin:0px 16px; font-size:9px; color:#666; } 
+
+/****** social bar *****/ 
+#socialbar { position:fixed; top:200px; right:0px; z-index:10; width:37px; height:147px; padding:3px 0 0 0; background-image:url(/images/back_socialbar.png); background-repeat:no-repeat; } 
+.socialbuttons { margin:8px 0 0 0; z-index:10; } 
+.socialmedia { position:fixed; visibility:hidden; top:210px; right:36px; z-index:11; width:351px; height:104px; background-image:url(/images/back_socialcontent.png); background-repeat:no-repeat; text-align:left; } 
+
+/****** cuge box *****/ 
+.tableoutside { border: 1px solid #999; background: #fff; background-color: #fff; margin-top:20px; } 
+.tableinside { padding: 15px; } 
+.smalltext { font-family: Arial, Helvetica, sans-serif; font-size: 9px; color:#990; } 
+.smalllink { font-family: Arial, Helvetica, sans-serif; font-size: 9px; color:#990; text-decoration: underline; } 
+.smalllink:hover { font-family: Arial, Helvetica, sans-serif; font-size: 9px; color:#f90; text-decoration: underline; } 
+
+/****** sample *****/ 
+#samplewrapper { width:795px; border:1px solid #999; margin:28px 0 20px 0; } 
+#sampleview { float:left; width:450px; min-height:240px; padding:12px; border-right:1px solid #999; } 
+#sampleactions { float:left; width:295px; min-height:240px; padding:12px; } 
+
+/****** IMGLIB *****/ 
+.examplepreviews { margin:20px 10px 0 0; border:1px solid #999; } 
+#highresframe { position:absolute; top:138px; width:auto; min-width:736px; height:auto; min-height:300px; padding:14px 24px 32px 32px; margin:0 0 0 -6px; border:1px solid #000; background-color:#333; color:#fff; } 
+#highresframe h3 { color:#fff; } 
+.highresimage { margin:0 24px 6px 0; border:1px solid #000; } 
+#highresloader { margin:100px 0 0 350px; } 
+
+/****** CS *****/ 
+.cssections { width:76%; background-color:#efefef; padding:14px 11px 18px 11px; margin:8px 0; border:2px solid #efefef; cursor:pointer; } 
+.cssections:hover { color:#333; } 
+/* .csquestion { cursor:help; } */ 
